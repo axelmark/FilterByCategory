@@ -14,6 +14,9 @@ namespace DropDownList.Controllers {
             ViewData["idSel"] = selId;
             ViewBag.list = new List<DropList>
             {
+                //Лучше бы конечно чтобы значения в списке формировались по таблице БД. 
+                //Однажды может появиться новый жанр а в этом месте добавить забудут
+                //Захардкоженный список получился
                 new DropList {IDs = 1, Value = "Comedy"},
                 new DropList {IDs = 2, Value = "Family"},
                 new DropList {IDs = 3, Value = "Romance"},
